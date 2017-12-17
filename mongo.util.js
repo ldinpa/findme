@@ -5,7 +5,7 @@ let connectToMongoDB = () => {
 
     return new Promise((resolve, reject) => {
 
-        let mongoUrl = "mongodb://ldinpa:(*JULU2julu*)@ds035270.mlab.com:35270/ersama_db";
+        let mongoUrl = "mongodb://utkal:ldinpa90@ds035270.mlab.com:35270/ersama_db";
         MongoClient.connect(mongoUrl, function (err, dbInstance) {
             if (err) {
                 console.log(err);
