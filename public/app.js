@@ -1,5 +1,5 @@
 (function () {
-    var app = angular.module('janData', ['ui.router']);
+    var app = angular.module('ErasamaData', ['ui.router']);
 
     app.config(RoutesConfig);
 
