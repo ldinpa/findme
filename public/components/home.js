@@ -1,4 +1,4 @@
-var app = angular.module('ErasamaData');
+var app = angular.module('janData');
 
 app.controller('homeController', homeController);
 
