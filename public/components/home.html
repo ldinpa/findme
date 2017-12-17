@@ -1,0 +1,71 @@
+<div ng-controller="homeController">
+
+    <h1>Jan data Page</h1>
+
+    <style>
+        #logout {
+            position: absolute;
+            right: 0;
+        }
+
+        #container {
+            width: 100%;
+            margin-left: 30px;
+        }
+    </style>
+
+    <div id="logout">
+        <button class="btn btn-danger" ng-click="logout()">Logout</button>
+    </div>
+    <br>
+    <br>
+    <div class="container">
+        Name:
+        <input type="text" ng-model="name">
+        <button class="btn btn-primary" ng-click="printName()">Search</button>
+        <p></p>
+        Village:
+        <input type="text" ng-model="village">
+        <button class="btn btn-primary" ng-click="printVillage()">Search</button>
+
+
+
+        <br>
+
+        <table class="table">
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>DOB</th>
+                <th>Gender</th>
+                <th>RelativeName</th>
+                <th>Relation</th>
+                <th>Landmark</th>
+                <th>Village</th>
+                <th>Mobile</th>
+                <th>FatherName</th>
+                <th>MotherName</th>
+            </tr>
+            <tr ng-repeat="rec in data">
+
+                <td>{{rec.ID}}</td>
+                <td>{{rec.Name}}</td>
+                <td>{{rec.DOB}}</td>
+                <td>{{rec.Gender}}</td>
+                <td>{{rec.RelativeName}}</td>
+                <td>{{rec.Relation}}</td>
+                <td>{{rec.Landmark}}</td>
+                <td>{{rec.Village}}</td>
+                <td>{{rec.Mobile}}</td>
+                <td>{{rec.FatherName}}</td>
+                <td>{{rec.MotherName}}</td>
+
+            </tr>
+
+
+
+
+        </table>
+
+    </div>
+</div>
